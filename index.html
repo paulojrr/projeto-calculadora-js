@@ -13,53 +13,57 @@
     <div id="main">
         <div id="container">
             <div id="calculo">
-                calculo
+                <form name="form">
+                    <input class="textView" name="textView">
+                </form>
+
             </div>
             <div id="tables">
 
                 <table>
                     <tr>
-                        <td><span class="td-style">C</span></td>
-                        <td><span class="td-style">CE</span></td>
-                        <td class="vazio"><span class="td-style"></span></td>
-                        <td><span class="td-style">%</span></td>
+                        <td><input class="button" type="button" value="C" onclick="clearAll()"></td>
+                        <td><input class="button" type="button" value="CE" onclick="clearOne()"></td>
+                        <td><input class="button" type="button" id="vazio" value=""></td>
+                        <td><input class="button" type="button" value="%" onclick="inputNum('%')"></td>
                     </tr>
                 </table>
 
 
                 <table>
                     <tr>
-                        <td><span class="td-style">7</span></td>
-                        <td><span class="td-style">8</span></td>
-                        <td><span class="td-style">9</span></td>
-                        <td><span class="td-style">&divide</span></td>
+
+                        <td><input class="button" type="button" value="7" onclick="inputNum(7)"></td>
+                        <td><input class="button" type="button" value="8" onclick="inputNum(8)"></td>
+                        <td><input class="button" type="button" value="9" onclick="inputNum(9)"></td>
+                        <td><input class="button" type="button" value="/" onclick="inputNum('/')"></td>
                     </tr>
                 </table>
 
                 <table>
                     <tr>
-                        <td><span class="td-style">4</span></td>
-                        <td><span class="td-style">5</span></td>
-                        <td><span class="td-style">6</span></td>
-                        <td><span class="td-style">X</span></td>
+                        <td><input class="button" type="button" value="4" onclick="inputNum(4)"></td>
+                        <td><input class="button" type="button" value="5" onclick="inputNum(5)"></td>
+                        <td><input class="button" type="button" value="6" onclick="inputNum(6)"></td>
+                        <td><input class="button" type="button" value="*" onclick="inputNum('*')"></td>
                     </tr>
                 </table>
 
                 <table>
                     <tr>
-                        <td><span class="td-style">1</span></td>
-                        <td><span class="td-style">2</span></td>
-                        <td><span class="td-style">3</span></td>
-                        <td><span class="td-style">-</span></td>
+                        <td><input class="button" type="button" value="1" onclick="inputNum(1)"></td>
+                        <td><input class="button" type="button" value="2" onclick="inputNum(2)"></td>
+                        <td><input class="button" type="button" value="3" onclick="inputNum(3)"></td>
+                        <td><input class="button" type="button" value="-" onclick="inputNum('-')"></td>
                     </tr>
                 </table>
 
                 <table>
                     <tr>
-                        <td><span class="td-style">0</span></td>
-                        <td><span class="td-style">.</span></td>
-                        <td><span class="td-style">=</span></td>
-                        <td><span class="td-style">+</span></td>
+                        <td><input class="button" type="button" value="0" onclick="inputNum(0)"></td>
+                        <td><input class="button" type="button" value="." onclick="inputNum('.')"></td>
+                        <td><input class="button" type="button" value="=" onclick="equal()"></td>
+                        <td><input class="button" type="button" value="+" onclick="inputNum('+')"></td>
                     </tr>
 
                 </table>
@@ -67,7 +71,7 @@
 
         </div>
     </div>
-
+    <script src="/js/logic.js"></script>
 </body>
 
 </html>
